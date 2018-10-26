@@ -4,7 +4,7 @@ function arrayOfNumbers(numbers) {
   for(var i = 0; i <= numbers; i++) {
     numberArray.push(i);
   }
-  return numberArray;
+  return numberArray.join(" ").split(" ");
 };
 
 
