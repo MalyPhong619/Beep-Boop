@@ -11,5 +11,10 @@ img {
   width: 50%
 }
 p {
+  text-align: justify;
   display: none;
+}
+input {
+  backgroun: black;
+  color: red;
 }
