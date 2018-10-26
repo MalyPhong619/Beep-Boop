@@ -14,6 +14,11 @@ function arrayOfNumbers(numbers, name) {
   }
   return numberArray.join("! ");
 };
+// timeing delay
+
+
+
+
 
 // UI Logic
 $(document).ready(function() {
@@ -34,6 +39,13 @@ $(document).ready(function() {
     alert("Please make sure input number is an integer >= 0")
   }
 
-    $("#translatedNumbers").text(resultArray + "!");
+    var splitArray = resultArray;
+      for (var i = 0; i <= splitArray; i++) {
+        setTimeout(function() {
+
+      }); 1000
+    }
+    $("#translatedNumbers").append(splitArray);
+
   });
 });
