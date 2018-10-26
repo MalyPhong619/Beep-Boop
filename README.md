@@ -17,7 +17,7 @@ _This application will translate a numerical value from the user's input. It wil
   * **Input:** 12
   * **Output:** Beep, Boop, 2, 3, 4, 5, 6, 7, 8, 9, Beep, Boop, Boop
 
-* _Any number divisible by 3, the whole value will be replace with "I'm sorry -username-, I cannot do that."_
+* _Any number divisible by 3 excluding 0, the whole value will be replace with "I'm sorry -username-, I cannot do that."_
   * **Input:** 7
   * **Output:** Beep, Boop, I'm sorry -username-, I cannot do that., 4, 5, I'm sorry -username-, I cannot do that., 7
 

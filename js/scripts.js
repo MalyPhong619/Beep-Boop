@@ -3,7 +3,7 @@ function arrayOfNumbers(numbers, name) {
   var numberArray = [];
   for(var i = 0; i <= numbers; i++) {
     if (i % 3 === 0 && i != 0) {
-      numberArray.push("Im Sorry " + name + ", I'm afraid I cannot do that!");
+      numberArray.push("Im Sorry " + name + ", I'm afraid I cannot do that");
     } else if (i === 0 || i.toString().includes("0")) {
       numberArray.push("Beep");
     } else if (i === 1 || i.toString().includes("1")) {
@@ -12,14 +12,8 @@ function arrayOfNumbers(numbers, name) {
       numberArray.push(i);
     }
   }
-  console.log(numberArray);
-  return numberArray.join(", ");
+  return numberArray.join("! ");
 };
-
-
-
-
-
 
 // UI Logic
 $(document).ready(function() {
@@ -38,6 +32,6 @@ $(document).ready(function() {
     alert("Please make sure input number is an integer >= 0")
   }
 
-    $("#translatedNumbers").text(resultArray);
+    $("#translatedNumbers").text(resultArray + "!");
   });
 });
