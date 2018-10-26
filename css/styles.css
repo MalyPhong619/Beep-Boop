@@ -2,6 +2,13 @@ body {
   background: black;
   color: red;
   font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+.container {
+  width: 400px;
+}
+img {
+  width: 50%
 }
 p {
   display: none;
