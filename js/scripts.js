@@ -31,7 +31,8 @@ $(document).ready(function() {
   } else {
     alert("Please make sure input number is an integer >= 0")
   }
-
+    $(".userInput").hide();
+    $("#translatedNumbers").show();
     $("#translatedNumbers").text(resultArray + "!");
   });
 });
