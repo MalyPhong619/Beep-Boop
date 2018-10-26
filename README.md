@@ -32,9 +32,9 @@ _If there are any questions or would like to contribute to the code, please feel
 
 ## Technologies Used
 
-_ATOM -text editor-_
-_BOOTSTRAP_
-_JQUERY_
+* _ATOM -text editor-_
+* _BOOTSTRAP_
+* _JQUERY_
 
 ### License
 
