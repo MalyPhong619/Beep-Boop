@@ -6,6 +6,8 @@ function arrayOfNumbers(numbers) {
     numberArray.push("Beep!");
   } else if (i === 1) {
     numberArray.push("Boop!");
+  } else if (i % 3 === 0) {
+    numberArray.push("Im Sorry!")
   }
   }
   return numberArray;
