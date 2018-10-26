@@ -2,7 +2,7 @@
 function arrayOfNumbers(numbers, name) {
   var numberArray = [];
   for(var i = 0; i <= numbers; i++) {
-    if (i === 0) {
+    if (i === 0 || i.toString().includes("0")) {
       numberArray.push("Beep");
     } else if (i === 1) {
       numberArray.push("Boop");
@@ -12,6 +12,7 @@ function arrayOfNumbers(numbers, name) {
       numberArray.push(i);
     }
   }
+  console.log(numberArray);
   return numberArray.join(", ");
 };
 
@@ -30,7 +31,6 @@ $(document).ready(function() {
   if (inputNumber >= 0) {
     if (userName) {
     var resultArray = arrayOfNumbers(inputNumber, userName);
-    console.log(inputNumber, resultArray);
     } else {
       alert("Please make sure to enter your Name");
     }
