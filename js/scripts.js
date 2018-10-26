@@ -25,14 +25,15 @@ $(document).ready(function() {
   if (inputNumber >= 0) {
     if (userName) {
     var resultArray = arrayOfNumbers(inputNumber, userName);
+      $(".userInput").hide();
+      $("#translatedNumbers").show();
     } else {
       alert("Please make sure to enter your Name");
     }
   } else {
     alert("Please make sure input number is an integer >= 0")
   }
-    $(".userInput").hide();
-    $("#translatedNumbers").show();
+
     $("#translatedNumbers").text(resultArray + "!");
   });
 });

@@ -3,6 +3,7 @@ body {
   color: red;
   font-family: 'Roboto Mono', monospace;
   text-align: center;
+  padding: 50px;
 }
 .container {
   width: 400px;
@@ -10,11 +11,14 @@ body {
 img {
   width: 50%
 }
-p {
+#translatedNumbers {
   text-align: justify;
   display: none;
 }
-input {
-  backgroun: black;
+.form-control, textarea {
+  background-color: black;
+  color: red;
+}
+.btn-dark {
   color: red;
 }
