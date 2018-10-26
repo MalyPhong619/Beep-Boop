@@ -10,25 +10,25 @@ _This application will translate a numerical value from the user's input. It wil
 
 ## Specifications
 * _Any number containing 0, the whole value will be replaced with "Beep"_
-** Input: 10
-** Output: Beep, 1, 2, 3, 4, 5, 6, 7, 8, 9, Beep
+  * **Input:** 10
+  * **Output:** Beep, 1, 2, 3, 4, 5, 6, 7, 8, 9, Beep
 
 * _Any number containing 1, the whole value will be replaced with "Boop"_
-** Input: 12
-** Output: Beep, Boop, 2, 3, 4, 5, 6, 7, 8, 9, Beep, Boop, Boop
+  * **Input:** 12
+  * **Output:** Beep, Boop, 2, 3, 4, 5, 6, 7, 8, 9, Beep, Boop, Boop
 
 * _Any number divisible by 3, the whole value will be replace with "I'm sorry -username-, I cannot do that."_
-** Input: 7
-** Output: Beep, Boop, I'm sorry -username-, I cannot do that., 4, 5, I'm sorry -username-, I cannot do that., 7
+  * **Input:** 7
+  * **Output:** Beep, Boop, I'm sorry -username-, I cannot do that., 4, 5, I'm sorry -username-, I cannot do that., 7
 
 ## Setup/Installation
 
-* _Clone from github (BeepBoop! repository)[https://github.com/MalyPhong619/Beep-Boop.git/]_
+* _Clone from github [BeepBoop! repository](https://github.com/MalyPhong619/Beep-Boop.git/)_
 
 
 ## Support and contact details
 
-_If there are any questions or would like to contribute to the code, please feel free to email (Maly Phongsavanh)[mailto:phongsavanh619@icloud.com]_
+_If there are any questions or would like to contribute to the code, please feel free to email [Maly Phongsavanh](mailto:phongsavanh619@icloud.com)_
 
 ## Technologies Used
 
