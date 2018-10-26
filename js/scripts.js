@@ -1,5 +1,5 @@
 //  Business Logic
-function arrayOfNumbers(numbers) {
+function arrayOfNumbers(numbers, name) {
   var numberArray = [];
   for(var i = 0; i <= numbers; i++) {
     if (i === 0) {
@@ -7,7 +7,7 @@ function arrayOfNumbers(numbers) {
   } else if (i === 1) {
     numberArray.push("Boop!");
   } else if (i % 3 === 0) {
-    numberArray.push("Im Sorry!")
+    numberArray.push("Im Sorry " + name + ", I'm afraid I cannot do that!")
   }
   }
   return numberArray;
@@ -25,7 +25,7 @@ $(document).ready(function() {
     var userName = $("#userName").val();
     var inputNumber = parseInt($("#inputNumber").val());
 
-    var resultArray = arrayOfNumbers(inputNumber);
+    var resultArray = arrayOfNumbers(inputNumber, userName);
     console.log(inputNumber, resultArray);
     $("#translatedNumbers").append(resultArray);
   });
