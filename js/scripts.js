@@ -3,14 +3,16 @@ function arrayOfNumbers(numbers, name) {
   var numberArray = [];
   for(var i = 0; i <= numbers; i++) {
     if (i === 0) {
-      numberArray.push("Beep!");
+      numberArray.push("Beep");
     } else if (i === 1) {
-      numberArray.push("Boop!");
+      numberArray.push("Boop");
     } else if (i % 3 === 0) {
       numberArray.push("Im Sorry " + name + ", I'm afraid I cannot do that!")
+    } else {
+      numberArray.push(i);
     }
   }
-  return numberArray;
+  return numberArray.join(", ");
 };
 
 
@@ -36,6 +38,6 @@ $(document).ready(function() {
     alert("Please make sure input number is an integer >= 0")
   }
 
-    $("#translatedNumbers").append(resultArray);
+    $("#translatedNumbers").text(resultArray);
   });
 });
