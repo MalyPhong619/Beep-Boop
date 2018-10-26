@@ -2,7 +2,7 @@
 function arrayOfNumbers(numbers) {
   var numberArray = [];
   for(var i = 0; i <= numbers; i++) {
-    numberArray.push(numbers);
+    numberArray.push(i);
   }
   return numberArray;
 };
