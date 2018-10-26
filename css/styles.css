@@ -1,6 +1,7 @@
 body {
   background: black;
   color: red;
+  font-family: 'Roboto Mono', monospace;
 }
 p {
   display: none;
