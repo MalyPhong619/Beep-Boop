@@ -11,23 +11,9 @@ function arrayOfNumbers(numbers, name) {
     } else {
       numberArray.push(i);
     }
-  }
+  }; 2000;
   return numberArray.join("! ");
 };
-
-// TimeDelaying
-function timeDelayingOutput(delayArray) {
-  var delayThis = [];
-  for (var j = 0; j <= delayArray; j++) {
-    delayThis.push(j);
-  }; 2000;
-  return delayThis;
-}
-
-
-
-
-
 
 // UI Logic
 $(document).ready(function() {
@@ -48,11 +34,12 @@ $(document).ready(function() {
     alert("Please make sure input number is an integer >= 0")
   }
 
-    var splitArray = resultArray.split("");
-    var deylayingArray = timeDelayingOutput(splitArray);
-    console.log(deylayingArray);
-
-    $("#translatedNumbers").append(deylayingArray);
+  var splitArray = resultArray.split("");
+  // for (var j = 0; j <= splitArray.length; ++j){
+  //   $("#translatedNumbers").append(j);
+  // }; 2000;
+  // console.log(j);
+  $("#translatedNumbers").text(resultArray);
 
   });
 });
