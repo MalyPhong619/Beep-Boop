@@ -2,11 +2,14 @@
 function arrayOfNumbers(numbers) {
   var numberArray = [];
   for(var i = 0; i <= numbers; i++) {
-    if (i === 0)
+    if (i === 0) {
     numberArray.push("Beep!");
+  } else if (i === 1) {
+    numberArray.push("Boop!");
+  }
   }
   return numberArray;
-  };
+};
 
 
 
