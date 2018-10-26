@@ -4,7 +4,7 @@ function arrayOfNumbers(numbers, name) {
   for(var i = 0; i <= numbers; i++) {
     if (i === 0 || i.toString().includes("0")) {
       numberArray.push("Beep");
-    } else if (i === 1) {
+    } else if (i === 1 || i.toString().includes("1")) {
       numberArray.push("Boop");
     } else if (i % 3 === 0) {
       numberArray.push("Im Sorry " + name + ", I'm afraid I cannot do that!")
