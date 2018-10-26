@@ -14,7 +14,16 @@ function arrayOfNumbers(numbers, name) {
   }
   return numberArray.join("! ");
 };
-// timeing delay
+
+// TimeDelaying
+function timeDelayingOutput(delayArray) {
+  var delayThis = [];
+  for (var j = 0; j <= delayArray; j++) {
+    delayThis.push(j);
+  }; 2000;
+  return delayThis;
+}
+
 
 
 
@@ -39,13 +48,11 @@ $(document).ready(function() {
     alert("Please make sure input number is an integer >= 0")
   }
 
-    var splitArray = resultArray;
-      for (var i = 0; i <= splitArray; i++) {
-        setTimeout(function() {
+    var splitArray = resultArray.split("");
+    var deylayingArray = timeDelayingOutput(splitArray);
+    console.log(deylayingArray);
 
-      }); 1000
-    }
-    $("#translatedNumbers").append(splitArray);
+    $("#translatedNumbers").append(deylayingArray);
 
   });
 });
