@@ -35,8 +35,15 @@ $(document).ready(function() {
     alert("Please make sure input number is an integer >= 0")
   }
 
+  // $("p").text(resultArray);
+  $("p").empty();
   $("p").text(resultArray);
-
+    $({count:0}).animate({count:resultArray.length}, {
+      duration: 9000,
+      step: function() {
+        $("p").text(resultArray.substring(0, Math.round(this.count)));
+      }
+    })
 
   });
 });
